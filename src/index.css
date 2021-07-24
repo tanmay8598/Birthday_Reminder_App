@@ -13,20 +13,6 @@ code {
     monospace;
 }
 
-h2 {
-  font-size: 2rem;
-  text-decoration: none;
-}
-
-h4 {
-  margin-bottom: 0.75rem;
-}
-
-p {
-  margin-top: 1rem;
-  color: grey;
-}
-
 button {
   width: 100%;
   height: 5vh;
@@ -45,15 +31,16 @@ img {
 }
 
 main {
-  min-width: 100vh;
+  min-height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 .container {
-  width: 25vw;
-  margin: 5rem 0;
+  width: 70vw;
+  max-width: 370px;
+  margin: 2rem auto;
   padding: 0 2rem;
   padding-bottom: 2rem;
   background-color: #fff;
@@ -67,4 +54,41 @@ main {
   column-gap: 0.75rem;
   margin-bottom: 0.5rem;
   align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+
+@media only screen and (min-width: 800px) {
+  h2 {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  h4 {
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin-top: 1rem;
+    color: grey;
+  }
+
+  .container {
+    width: 95vw;
+  }
 }
